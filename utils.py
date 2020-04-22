@@ -26,3 +26,11 @@ def display(values):
                       for c in cols))
         if r in 'CF': print(line)
     return
+
+
+def get_only_appearence(dict):
+    keys = []
+    for key, value in dict.items():
+        if value == 1:
+            keys.append(key)
+    return keys
